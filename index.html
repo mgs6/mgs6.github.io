@@ -3,12 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | New Unity Project 1</title>
+    <title>DHN</title>
+    <!-- temp prototype, will clean up later (-: !-->
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <script src="TemplateData/UnityProgress.js"></script>
   </head>
   <body class="template">
+
+  	  <div id="hello" style="position:absolute; 
+      left: 0px; 
+      top: 0px; 
+      min-height: 100%; 
+      min-width: 100%; 
+      max-height: 100%; 
+      max-width: 100%; 
+      height: auto; 
+      width: auto;
+      text-align: center; ">
+      Dead Head Nod v0.00005<br>
+      movment: WASD<br>
+      rotation: mouse<br>
+      	loading..
+  	  	
+  	  </div>
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" 
       style="position:absolute; 
       left: 0px; 
@@ -18,21 +36,35 @@
       max-height: 100%; 
       max-width: 100%; 
       height: auto; 
-      width: auto; "></canvas>
+      width: auto; 
+      display: none;"></canvas>
       
     <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    backgroundColor: "#222C36",
-    splashStyle: "Light",
-    dataUrl: "Release/dhn_v05.data",
-    codeUrl: "Release/dhn_v05.js",
-    asmUrl: "Release/dhn_v05.asm.js",
-    memUrl: "Release/dhn_v05.mem",
-  };
-</script>
+		  var Module = {
+		    TOTAL_MEMORY: 268435456,
+		    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+		    compatibilitycheck: null,
+		    backgroundColor: "#222C36",
+		    splashStyle: "Light",
+		    dataUrl: "Release/dhn_v05.data",
+		    codeUrl: "Release/dhn_v05.js",
+		    asmUrl: "Release/dhn_v05.asm.js",
+		    memUrl: "Release/dhn_v05.mem",
+		  };
+	</script>
+
+	<script type="text/javascript">
+		console.log("jello");
+		function myFunction() {
+		    var x = document.getElementById('canvas');
+		    if (x.style.display === 'none') {
+		        x.style.display = 'block';
+		    } else {
+		        x.style.display = 'none';
+		    }
+		}
+
+	</script>
 <script src="Release/UnityLoader.js"></script>
 
   </body>
