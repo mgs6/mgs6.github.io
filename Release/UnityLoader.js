@@ -1,5 +1,4 @@
-function LoadJSCodeBlob(e,t,n){var o=document.createElement("script"),
-i=URL.createObjectURL(e);
+function LoadJSCodeBlob(e,t,n){var o=document.createElement("script"),i=URL.createObjectURL(e);
 n&&(Module.blobInfo||(Module.blobInfo={}),Module.blobInfo[i]=n),
 o.src=i,
 o.onload=function(){URL.revokeObjectURL(i),t&&t()},
